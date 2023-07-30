@@ -1,0 +1,220 @@
+1.
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        .registration-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 400px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="tel"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .gender-group label {
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-box">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <th><label for="first-name">First Name:</label></th>
+                    <td><input type="text" id="first-name" name="first-name" required></td>
+                </tr>
+                <tr>
+                    <th><label for="last-name">Last Name:</label></th>
+                    <td><input type="text" id="last-name" name="last-name" required></td>
+                </tr>
+                <tr>
+                    <th><label for="mobile-number">Mobile Number:</label></th>
+                    <td><input type="tel" id="mobile-number" name="mobile-number" required></td>
+                </tr>
+                <tr>
+                    <th>Gender:</th>
+                    <td class="gender-group">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email:</label></th>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <th>Favourite Music:</th>
+                    <td>
+                        <input type="checkbox" id="pop" name="music" value="pop">
+                        <label for="pop">Pop</label>
+                        <input type="checkbox" id="rock" name="music" value="rock">
+                        <label for="rock">Rock</label>
+                        <input type="checkbox" id="other" name="music" value="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="additional-details">Additional Details:</label></th>
+                    <td><textarea id="additional-details" name="additional-details"></textarea></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="checkbox" id="terms-conditions" required>
+                        <label for="terms-conditions">I agree to terms and conditions</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.
+<html>
+<head>
+    <title>Car Registration Form</title>
+    <style>
+        .registration-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 400px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="tel"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group .check-group label {
+            display: inline;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-box">
+        <form action="#" method="post">
+            <table>
+                <h2>Car Registration</h2>
+                <tr>
+                    <th><label for="owner-name">Owner Name:</label></th>
+                    <td><input type="text" id="owner-name" name="owner-name" required></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email:</label></th>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <th><label for="phone-number">Phone Number:</label></th>
+                    <td><input type="tel" id="phone-number" name="phone-number" required></td>
+                </tr>
+                <tr>
+                    <th><label for="country">Country:</label></th>
+                    <td>
+                        <select id="country" name="country" required>
+                            <option value="">Select Country</option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">UK</option>
+                            <!-- Add more countries as needed -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="car-model">Car Model:</label></th>
+                    <td><input type="text" id="car-model" name="car-model" required></td>
+                </tr>
+                <tr>
+                    <th><label for="manufacture-year">Manufacture Year:</label></th>
+                    <td>
+                        <select id="manufacture-year" name="manufacture-year" required>
+                            <option value="">Select Year</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <!-- Add more years as needed -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Transmission:</th>
+                    <td class="check-group">
+                        <label for="manual">Manual</label>
+                        <input type="radio" id="manual" name="transmission" value="manual" required>
+                        <label for="auto">Auto</label>
+                        <input type="radio" id="auto" name="transmission" value="auto" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Other:</th>
+                    <td><textarea id="other" name="other"></textarea></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="checkbox" id="terms-conditions" required>
+                        <label for="terms-conditions">I agree to terms and conditions</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
